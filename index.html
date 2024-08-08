@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadyan - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcomeOverlay" class="overlay">
+        <h1>Welcome to Hadyan's Portfolio</h1>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+    <div class="container">
+        <section class="section profile float-animation">
+            <div class="profile-content">
+                <div class="profile-image"><img src="profil.jpeg" alt=""></div>
+                <div class="profile-text">
+                    <h1><span>Hi, It's</span> Hadyan</h1>
+                    <p>I'm a Fotografer</p>
+                    <p>A student from SMA Negeri 2 CIKARANG SELATAN, who likes to document small things in every moment or second</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Services</h2>
+            <div class="grid">
+                <div class="item">Web Design</div>
+                <div class="item">Fotographer</div>
+                <div class="item">Videographer</div>
+                <div class="item">Editor</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <div class="grid">
+                <div class="item">▹Birthday <br>27 agustus 2008, in Pemalang, Jawa Tengah</div>
+                <div class="item">▹Hobby <br>Badminton, Swimming, Edit photos or videos</div>
+                <div class="item">▹Fav Music <br>L-Hal, Rahasia hati-Nidji, Lagu lama-More on Mumbles, Terimakasih-hal, Monolog-Pamungkas, Sempurna-Andra&The back bone</div>
+                <div class="item">▹Purpose of life <br>I want to make my parents happy, I want to see my parents cry with joy, I want to be successful and marry the woman of my dreams</div>
+                <div class="item">▹Life Motto <br>Live and Let Live, Hidup dengan damai dan biarkan orang lain menjalani hidup mereka sendiri.</div>
+                <div class="item">▹MBTI <br>INTP, Introverted individuals tend to prefer fewer, yet deep and meaningful, social interactions and often feel drawn to calmer environments.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>My Education</h2>
+            <ul class="education-list">
+                <li class="education-item">SDS Barunawati III</li>
+                <li class="education-item">SMPN 55 Jakarta</li>
+                <li class="education-item">SMAN 2 Cikarang Selatan</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xldrnjgo" method="POST">
+                <ul class="contact-form">
+                    <li><input type="text" name="name" placeholder="Your Name"></li>
+                    <li><input type="email" name="email" placeholder="Your Email"></li>
+                    <li><textarea name="message" placeholder="Your Message" rows="4"></textarea></li>
+                    <li><button type="submit">Send Message</button></li>
+                </ul>
+            </form>
+        </section>
+    </div>
+    <section class="button-section">
+        <button class="animated-button">Introvert</button>
+        <button class="animated-button">Independent</button>
+        <button class="animated-button">Creative</button>
+        <button class="animated-button">Critical thinking</button>
+        <button class="animated-button">Team Work</button>
+    </section>
+
+    <audio id="backgroundMusic" loop>
+        <source src="music (2).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div id="musicControl">
+        <button id="playPauseBtn">Play</button>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div class="floating-quote">
+        <p>"Hidup adalah 10% apa yang terjadi pada kita dan 90% bagaimana kita meresponsnya."<br>- Charles R. Swindoll</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
